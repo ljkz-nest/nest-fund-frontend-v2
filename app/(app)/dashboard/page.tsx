@@ -12,7 +12,7 @@ export default function DashboardPage() {
         <KPI label="Estimated Annual Return" value={9.8} isPercent />
         <KPI label="Lifetime Earnings" value={2450.75} />
       </div>
-      <div className="grid grid-cols-1 lg:grid-cols-3 gap-6">
+      <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
         <ChartCard kind="line" title="Portfolio Performance" />
         <ChartCard kind="doughnut" title="Portfolio Allocation" />
       </div>
