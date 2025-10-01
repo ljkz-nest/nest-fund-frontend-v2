@@ -11,7 +11,7 @@ export default function NavBar() {
     <header className="bg-white shadow-sm sticky top-0 z-50" role="banner">
       <div className="container mx-auto px-6 py-4 flex justify-between items-center">
         <Link href="/" className="flex items-center gap-2">
-          <Image src="/logo.png" alt="Nest Fund logo" width={64} height={64} priority />
+          <Image src="/logo.png" alt="Nest Fund logo" width={128} height={128} priority />
           <span className="text-2xl font-bold text-gray-900">Nest Fund</span>
         </Link>
         <button className="md:hidden" aria-controls="main-nav" aria-expanded={open} onClick={() => setOpen(v => !v)}>
