@@ -8,22 +8,22 @@ export default function OpportunitiesPage() {
       <div className="bg-white p-4 rounded-lg shadow mb-6">
         <form className="grid grid-cols-1 md:grid-cols-4 gap-4" aria-label="Filters">
           <label className="text-sm font-medium text-gray-700">Region
-            <select className="mt-1 block w-full py-2 px-3 border border-gray-300 rounded-md focus:outline-none focus:ring-brand-500 focus:border-brand-500 text-sm">
+            <select className="mt-1 block w-full py-2 px-3 border border-gray-300 rounded-md focus:outline-none focus:ring-teal-500 focus:border-teal-500 text-sm">
               <option>All</option><option>East Asia</option><option>Southeast Asia</option><option>South America</option>
             </select>
           </label>
           <label className="text-sm font-medium text-gray-700">Loan Grade
-            <select className="mt-1 block w-full py-2 px-3 border border-gray-300 rounded-md focus:outline-none focus:ring-brand-500 focus:border-brand-500 text-sm">
+            <select className="mt-1 block w-full py-2 px-3 border border-gray-300 rounded-md focus:outline-none focus:ring-teal-500 focus:border-teal-500 text-sm">
               <option>All</option><option>A</option><option>B</option><option>C</option>
             </select>
           </label>
           <label className="text-sm font-medium text-gray-700">Est. APR
-            <select className="mt-1 block w-full py-2 px-3 border border-gray-300 rounded-md focus:outline-none focus:ring-brand-500 focus:border-brand-500 text-sm">
+            <select className="mt-1 block w-full py-2 px-3 border border-gray-300 rounded-md focus:outline-none focus:ring-teal-500 focus:border-teal-500 text-sm">
               <option>Any</option><option>8-10%</option><option>10-12%</option><option>12%+</option>
             </select>
           </label>
           <div className="self-end">
-            <button className="w-full bg-brand-600 text-white font-semibold py-2 px-4 rounded-lg hover:bg-brand-700 transition">Filter</button>
+            <button className="w-full bg-teal-600 text-white font-semibold py-2 px-4 rounded-lg hover:bg-teal-700 transition">Filter</button>
           </div>
         </form>
       </div>

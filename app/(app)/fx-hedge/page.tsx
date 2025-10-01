@@ -24,7 +24,7 @@ export default function FXHedgePage() {
               <td className="p-4">$2,500.00</td>
               <td className="p-4">8,450,000 MNT</td>
               <td className="p-4 text-orange-700">Unhedged</td>
-              <td className="p-4 text-center"><button className="bg-brand-600 text-white text-sm px-4 py-2 rounded-lg hover:bg-brand-700">Activate Hedge</button></td>
+              <td className="p-4 text-center"><button className="bg-teal-600 text-white text-sm px-4 py-2 rounded-lg hover:bg-teal-700">Activate Hedge</button></td>
             </tr>
             <tr>
               <td className="p-4 font-semibold"><div>Ho Chi Minh, Vietnam</div><div className="text-xs text-gray-500 font-normal">VND / USD: 25,450.00</div></td>
