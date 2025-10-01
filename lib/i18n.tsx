@@ -3,7 +3,7 @@ import React, { createContext, useContext, useMemo, useState } from 'react';
 
 type Locale = 'en' | 'ja';
 
-// ★ 文言はすべて string として扱う
+/** すべての文言は string として扱う */
 interface BaseDict {
   brand: string;
   nav: {
@@ -21,7 +21,7 @@ interface BaseDict {
   };
 }
 
-// ★ 各ロケールの辞書
+/** 各言語の辞書（値は自由な string、型は BaseDict でそろえる） */
 const DICTS: Record<Locale, BaseDict> = {
   en: {
     brand: 'Nest Fund',
@@ -58,18 +58,18 @@ const DICTS: Record<Locale, BaseDict> = {
 };
 
 type Ctx = { t: BaseDict; locale: Locale; setLocale: (l: Locale) => void } | null;
-
 const I18nCtx = createContext<Ctx>(null);
 
 export function I18nProvider({ children }: { children: React.ReactNode }) {
   const [locale, setLocale] = useState<Locale>('en');
-  const t = useMemo(() => DICTS[locale], [locale]);
+  // t を BaseDict として明示
+  const t = useMemo<BaseDict>(() => DICTS[locale], [locale]);
   return <I18nCtx.Provider value={{ t, locale, setLocale }}>{children}</I18nCtx.Provider>;
 }
 
 export function useI18n() {
   const ctx = useContext(I18nCtx);
-  // Providerが未到達の瞬間でも落ちないフェールセーフ
+  // Provider 未到達でも落ちないフェールセーフ
   if (!ctx) return { t: DICTS.en, locale: 'en' as Locale, setLocale: () => {} };
   return ctx;
 }
