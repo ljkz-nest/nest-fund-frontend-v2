@@ -28,7 +28,7 @@ export default function LandingPage() {
           <div className="relative container mx-auto px-6 py-24 md:py-32">
             <h1 className="text-4xl md:text-5xl font-bold leading-tight max-w-3xl">{t.hero.title}</h1>
             <p className="mt-4 max-w-2xl text-lg md:text-xl text-gray-100">{t.hero.subtitle}</p>
-            <a href="#opportunities" className="mt-8 inline-flex items-center bg-white text-brand-700 font-semibold py-3 px-6 rounded-lg shadow hover:shadow-md focus:shadow-md transition">{t.hero.cta}</a>
+            <a href="#opportunities" className="mt-8 inline-flex items-center bg-white text-teal-700 font-semibold py-3 px-6 rounded-lg shadow hover:shadow-md focus:shadow-md transition">{t.hero.cta}</a>
           </div>
         </section>
 
@@ -45,7 +45,7 @@ export default function LandingPage() {
                 { title: 'Earn Returns', icon: 'trending-up', desc: 'Receive monthly repayments and track your impact.' }
               ].map((s, i) => (
                 <div key={i} className="p-6">
-                  <div className="flex items-center justify-center h-16 w-16 rounded-full bg-brand-100 text-brand-700 mx-auto mb-5">
+                  <div className="flex items-center justify-center h-16 w-16 rounded-full bg-teal-100 text-teal-700 mx-auto mb-5">
                     <span aria-hidden className="i" data-icon={s.icon} />
                   </div>
                   <h3 className="text-xl font-semibold mb-2">{i + 1}. {s.title}</h3>
@@ -76,13 +76,13 @@ export default function LandingPage() {
               <Image src="/sample-4.jpg" alt="Happy family at their new home" width={600} height={400} className="rounded-lg shadow" />
             </div>
             <div>
-              <span className="font-semibold text-brand-700 uppercase">Invest with purpose</span>
+              <span className="font-semibold text-teal-700 uppercase">Invest with purpose</span>
               <h2 id="impact" className="text-3xl md:text-4xl font-bold text-gray-900 mt-2 mb-4">Your Investment is a Foundation</h2>
               <p className="text-gray-600 mb-4">Beyond financial returns, your investment provides families with a stable home—a foundation for health, education, and opportunity.</p>
               <div className="flex mt-6 gap-8">
-                <div><p className="text-3xl font-bold text-brand-700">3,000+</p><p className="text-gray-500">Families Housed</p></div>
-                <div><p className="text-3xl font-bold text-brand-700">$50M+</p><p className="text-gray-500">Capital Deployed</p></div>
-                <div><p className="text-3xl font-bold text-brand-700">12</p><p className="text-gray-500">Countries</p></div>
+                <div><p className="text-3xl font-bold text-teal-700">3,000+</p><p className="text-gray-500">Families Housed</p></div>
+                <div><p className="text-3xl font-bold text-teal-700">$50M+</p><p className="text-gray-500">Capital Deployed</p></div>
+                <div><p className="text-3xl font-bold text-teal-700">12</p><p className="text-gray-500">Countries</p></div>
               </div>
             </div>
           </div>
